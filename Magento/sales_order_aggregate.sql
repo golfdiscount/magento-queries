@@ -1,3 +1,5 @@
+-- Gets number of orders and dollar amount for all Magento store orders for
+-- the past 7 days
 SELECT DATE(created_at) AS "Date",
 	COUNT(*) AS "Count",
     FORMAT(SUM(grand_total), 2) AS "Grand Total"
