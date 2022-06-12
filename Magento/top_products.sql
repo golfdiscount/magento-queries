@@ -14,6 +14,6 @@ JOIN catalog_product_entity_varchar AS product_varchar ON product_varchar.entity
 WHERE product_varchar.attribute_id = (SELECT attribute_id
     FROM eav_attribute
     WHERE eav_attribute.attribute_code = "name"
-    AND  eav_attribute.entity_type_id = (SELECT entity_type_id
-	FROM eav_entity_type
-    WHERE entity_type_code = "catalog_product"));
+    	AND  eav_attribute.entity_type_id = (SELECT entity_type_id
+			FROM eav_entity_type
+		    WHERE entity_type_code = "catalog_product"));
